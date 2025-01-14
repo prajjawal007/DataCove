@@ -3,6 +3,15 @@
 **DataCove** is a sleek and modern web-based file storage platform designed to ensure your data is securely stored and easily accessible. Built with **HTML**, **CSS**, **JavaScript**, and **TailwindCSS**, DataCove combines security with style to give users an optimal file management experience.
 
 ---
+## Live Demo
+
+You can view and interact with the live demo of the **DataCove** project by visiting the following link:
+
+[DataCove - User Registration](https://datacove.onrender.com/user/register)
+
+This link will take you to the user registration page of DataCove. From there, you can create an account and explore the secure file storage system.
+
+---
 
 ## 🌟 Features
 
