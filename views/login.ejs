@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        .upload-zone {
+            transition: all 0.3s ease;
+        }
+        .upload-zone:hover {
+            border-color: rgb(236 72 153);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800">
+
+    <!-- Navbar -->
+    <nav class="bg-black/20 backdrop-blur-sm border-b border-white/10 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 flex-row">
+                DataCove
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form Section -->
+    <div class="container mx-auto px-4 py-16 flex justify-center items-center">
+        <div class="bg-black/30 backdrop-blur-sm rounded-2xl p-8 w-96 border border-white/20">
+            <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 text-center mb-6">
+                Login
+            </h2>
+
+            <form action="/user/login" method="POST">
+                <div class="mb-4">
+                    <label for="username" class="block text-white/80 mb-2">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" class="w-full p-3 rounded-lg bg-transparent border-2 border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-pink-500" required />
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="block text-white/80 mb-2">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" class="w-full p-3 rounded-lg bg-transparent border-2 border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-pink-500" required />
+                </div>
+
+                <button 
+                    type="submit" 
+                    class="w-full py-3 px-4 bg-gradient-to-r from-pink-500 to-violet-500 rounded-lg text-white font-medium transition-all hover:opacity-90 hover:shadow-lg hover:shadow-pink-500/25">
+                    Log In
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="mt-auto py-6 text-center text-white/70">
+        <div class="container mx-auto px-4">
+            &copy; 2025 DataCove. Built with
+            <span class="text-pink-500">❤️</span> by
+            <a 
+                href="#" 
+                class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 
+                       hover:opacity-80 transition-opacity"
+            >
+                Prajjawal Agrawal
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
